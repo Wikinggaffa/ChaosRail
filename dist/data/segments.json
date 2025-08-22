@@ -1,0 +1,114 @@
+[
+  {
+    "fromId": 0,
+    "toId": 1,
+    "travelSec": 22,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Odense → Odense Sygehus"
+  },
+  {
+    "fromId": 1,
+    "toId": 2,
+    "travelSec": 11,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Odense Sygehus → Fruens Bøge"
+  },
+  {
+    "fromId": 2,
+    "toId": 3,
+    "travelSec": 17,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Fruens Bøge → Hjallese"
+  },
+  {
+    "fromId": 3,
+    "toId": 4,
+    "travelSec": 28,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Hjallese → Højby Fyn"
+  },
+  {
+    "fromId": 4,
+    "toId": 5,
+    "travelSec": 28,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Højby Fyn → Årslev"
+  },
+  {
+    "fromId": 5,
+    "toId": 6,
+    "travelSec": 11,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Årslev → Pederstrup"
+  },
+  {
+    "fromId": 6,
+    "toId": 7,
+    "travelSec": 28,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Pederstrup → Ringe"
+  },
+  {
+    "fromId": 7,
+    "toId": 7,
+    "travelSec": 11,
+    "bidirectional": false,
+    "hasStationDwell": true,
+    "name": "Ringe dwell"
+  },
+  {
+    "fromId": 7,
+    "toId": 8,
+    "travelSec": 22,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Ringe → Rudme"
+  },
+  {
+    "fromId": 8,
+    "toId": 9,
+    "travelSec": 17,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Rudme → Kværndrup"
+  },
+  {
+    "fromId": 9,
+    "toId": 10,
+    "travelSec": 22,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Kværndrup → Stenstrup"
+  },
+  {
+    "fromId": 10,
+    "toId": 11,
+    "travelSec": 11,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Stenstrup → Stenstrup Syd"
+  },
+  {
+    "fromId": 11,
+    "toId": 12,
+    "travelSec": 11,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Stenstrup Syd → Svendborg Vest"
+  },
+  {
+    "fromId": 12,
+    "toId": 13,
+    "travelSec": 22,
+    "bidirectional": true,
+    "hasStationDwell": false,
+    "name": "Svendborg Vest → Svendborg"
+  }
+]

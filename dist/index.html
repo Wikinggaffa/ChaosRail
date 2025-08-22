@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaos Rail</title>
+    <style>
+      html, body { margin:0; height:100%; background:#111; color:#eee; font-family: system-ui, sans-serif; }
+      #app { height:100%; display:grid; place-items:center; }
+      canvas { background:#0f0f12; border:1px solid #333; width: 960px; height: 540px; image-rendering: pixelated; }
+      .hud { position: fixed; top: 12px; left: 12px; padding: 6px 10px; background: rgba(0,0,0,0.4); border: 1px solid #333; border-radius: 8px; font-size: 14px; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-B0__hx8H.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="view" width="960" height="540"></canvas>
+      <div class="hud"><span id="tick">tick: 0</span></div>
+    </div>
+  </body>
+</html>
