@@ -1,10 +1,10 @@
 import type { Train, Station, Passenger, Tuning, Line } from '../sim/types';
 
-// TODO: Implement dwell formula and FIFO boarding/alighting.
-// dwellSec = clamp(min, base + perPax*(board+alight), max)
+// TODO: Implement FIFO boarding/alighting.
+// dwellSec = clamp(min, base + perPax*(board + alight*2), max)
 // Stop boarding if onboard > capacityCrush.
 export function computeDwellSeconds(board: number, alight: number, base: number, per: number, min: number, max: number){
-  const v = base + per*(board + alight)
+  const v = base + per * (board + alight * 2)
   return Math.max(min, Math.min(max, v))
 }
 

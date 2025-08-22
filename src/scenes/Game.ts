@@ -1,4 +1,5 @@
 import { Renderer } from '../ui/renderer'
+import type { UiLayout } from '../ui/renderer'
 import { Mulberry32 } from '../engine/rng'
 import { loadLine, loadJSON } from '../sim/line'
 import type { Tuning, Line, Train, Passenger, Station } from '../sim/types'
@@ -17,6 +18,7 @@ export class Game {
   private rng = new Mulberry32(1337)
   private tuning!: Tuning
   private line!: Line
+  private uiLayout!: UiLayout
   private trains: Train[] = []
   private passengers: Passenger[] = []
   private stationQueues: Map<number, Passenger[]> = new Map()
@@ -38,6 +40,7 @@ export class Game {
   private async init(){
     this.tuning = await loadJSON<Tuning>('/data/tuning.json')
     this.line = await loadLine()
+    this.uiLayout = await loadJSON<UiLayout>('/data/uiLayout.json')
     this.breakdownSystem = new BreakdownSystem(this.tuning, this.rng);
     this.delaySystem = new DelaySystem(this.tuning, this.rng);
 
@@ -137,8 +140,8 @@ export class Game {
     }
 
     // Check if an action button was clicked
-    if (this.selectedTrain) {
-      const actions = this.tuning.hud.actions;
+    if (this.selectedTrain && this.uiLayout) {
+      const actions = this.uiLayout.hud.actions;
       for (let i = 0; i < actions.order.length; i++) {
         const action = actions.order[i];
         const buttonX = this.canvas.width + actions.x - (actions.order.length - i) * (actions.buttonSize + actions.gap);

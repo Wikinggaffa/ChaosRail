@@ -2,7 +2,7 @@ import type { Train, Line } from '../sim/types';
 import { loadJSON } from '../sim/line';
 
 // TODO: move to a more appropriate place
-interface UiLayout {
+export interface UiLayout {
   colors: Record<string, string>;
   sprites: Record<string, { w: number, h: number, r: number }>;
   hud: {
