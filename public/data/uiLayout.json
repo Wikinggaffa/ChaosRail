@@ -1,0 +1,60 @@
+{
+  "hud": {
+    "timer": {
+      "anchor": "top_left",
+      "x": 16,
+      "y": 16
+    },
+    "satisfaction": {
+      "anchor": "top_left",
+      "x": 16,
+      "y": 52,
+      "width": 240,
+      "height": 16
+    },
+    "fleetPanel": {
+      "anchor": "bottom_left",
+      "x": 16,
+      "y": -16,
+      "width": 360,
+      "height": 180
+    },
+    "actions": {
+      "anchor": "bottom_right",
+      "x": -16,
+      "y": -16,
+      "buttonSize": 48,
+      "gap": 12,
+      "order": [
+        "deploy",
+        "skip",
+        "reverse",
+        "cancel",
+        "forceEmpty"
+      ]
+    }
+  },
+  "colors": {
+    "ok": "#1fbf75",
+    "warning": "#f2a900",
+    "danger": "#e04646",
+    "hudBg": "#1e1e1e",
+    "hudText": "#f5f5f5"
+  },
+  "sprites": {
+    "train": {
+      "w": 48,
+      "h": 16
+    },
+    "station": {
+      "r": 6
+    },
+    "passenger": {
+      "r": 2
+    },
+    "button": {
+      "w": 48,
+      "h": 48
+    }
+  }
+}

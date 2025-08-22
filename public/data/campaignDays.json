@@ -1,0 +1,61 @@
+[
+  {
+    "day": 1,
+    "spawnScale": 0.6,
+    "breakdownScale": 0.8,
+    "delaysEnabled": false,
+    "tutorialFlags": {
+      "basics": true
+    }
+  },
+  {
+    "day": 2,
+    "spawnScale": 0.75,
+    "breakdownScale": 0.9,
+    "delaysEnabled": false,
+    "tutorialFlags": {
+      "spawningDetails": true
+    }
+  },
+  {
+    "day": 3,
+    "spawnScale": 0.9,
+    "breakdownScale": 1.0,
+    "delaysEnabled": true,
+    "tutorialFlags": {
+      "delaysIntro": true
+    }
+  },
+  {
+    "day": 4,
+    "spawnScale": 1.05,
+    "breakdownScale": 1.1,
+    "delaysEnabled": true,
+    "tutorialFlags": {
+      "turnbackTips": true
+    }
+  },
+  {
+    "day": 5,
+    "spawnScale": 1.2,
+    "breakdownScale": 1.2,
+    "delaysEnabled": true,
+    "tutorialFlags": {}
+  },
+  {
+    "day": 6,
+    "spawnScale": 1.35,
+    "breakdownScale": 1.35,
+    "delaysEnabled": true,
+    "tutorialFlags": {}
+  },
+  {
+    "day": 7,
+    "spawnScale": 1.5,
+    "breakdownScale": 1.5,
+    "delaysEnabled": true,
+    "tutorialFlags": {
+      "finale": true
+    }
+  }
+]

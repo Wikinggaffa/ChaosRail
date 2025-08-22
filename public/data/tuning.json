@@ -1,0 +1,117 @@
+{
+  "sim": {
+    "tickMs": 50,
+    "dayLengthSec": 300,
+    "rngSeed": 1337
+  },
+  "line": {
+    "endpoints": [
+      0,
+      13
+    ],
+    "depotStationId": 0,
+    "maxTrains": 5
+  },
+  "capacity": {
+    "nominal": 150,
+    "crush": 180
+  },
+  "dwell": {
+    "baseSec": 6,
+    "perPaxSec": 0.35,
+    "minSec": 12,
+    "maxSec": 18,
+    "specialStationIds": {
+      "7": 11
+    }
+  },
+  "turnback": {
+    "layoverSec": 20,
+    "endpointsOnly": true
+  },
+  "frustration": {
+    "waitingPerSec": 0.02,
+    "onTrainDecayPerSec": -0.03,
+    "skipPenalty": 8,
+    "cancelPenalty": 10,
+    "forceOffPenalty": 12
+  },
+  "hazard": {
+    "baseRateFormula": "lambda_per_min = 0.6 * dayPercent",
+    "durationSecRange": [
+      60,
+      120
+    ],
+    "trainRemovedAfterRepair": true
+  },
+  "delays": {
+    "speedFactor": 0.8,
+    "dwellFactor": 1.2,
+    "durationSecRange": [
+      30,
+      60
+    ]
+  },
+  "spawn": {
+    "basePerMin": {
+      "small": 6,
+      "medium": 10,
+      "hotspot": 16
+    },
+    "dayScaleByDay": [
+      0.6,
+      0.75,
+      0.9,
+      1.05,
+      1.2,
+      1.35,
+      1.5
+    ],
+    "curve": {
+      "type": "piecewise_linear",
+      "segments": [
+        {
+          "t0": 0,
+          "t1": 60,
+          "v0": 0.0,
+          "v1": 1.0
+        },
+        {
+          "t0": 60,
+          "t1": 220,
+          "v0": 1.0,
+          "v1": 1.0
+        },
+        {
+          "t0": 220,
+          "t1": 300,
+          "v0": 1.0,
+          "v1": 0.4
+        }
+      ]
+    },
+    "tickNoiseUniform": [
+      0.85,
+      1.15
+    ]
+  },
+  "ui": {
+    "satisfactionZones": [
+      [
+        0,
+        20,
+        "danger"
+      ],
+      [
+        20,
+        60,
+        "warning"
+      ],
+      [
+        60,
+        100,
+        "ok"
+      ]
+    ]
+  }
+}
